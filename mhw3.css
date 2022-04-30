@@ -1,0 +1,442 @@
+:root {
+  /*Retro Palette*/
+  --Red_N: #dd2020;
+  --Black_N: #0d0c0c;
+  --Gray_N: #a5a2a2;
+  --LightGray_N: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', serif;
+  background-color: var(--LightGray_N);
+  color: var(--Black_N);
+
+}
+
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-image: url(https://get.wallhere.com/photo/pixel-art-8-bit-1442071.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+h1 {
+
+  z-index: 1;
+}
+
+#title {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  font-size: 2em;
+
+}
+
+#sub_title {
+
+  font-size: 0.5em;
+  padding: 5px 120px;
+}
+
+
+
+
+#links {
+
+  display: flex;
+  align-items: flex-end;
+  top: 12px;
+
+}
+
+a {
+  background-color: white;
+  color: var(--Red_N);
+  padding: 5px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 2em;
+  text-decoration: none;
+  z-index: 1;
+}
+
+
+
+
+
+
+/*-----------------SOPRA-------------------------------------*/
+
+#middletop {
+  
+  border-radius: 8px;
+  margin: 10px;
+  background-color: var(--Gray_N);
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+#presentation {
+  border-radius: 8px;
+  background-color: var(--LightGray_N);
+  margin: 30px;
+  width: 70%;
+  flex-grow: 1;
+  padding: 30px;
+  font-size: 1em;
+  text-align: center;
+
+
+}
+div #presentation {
+  line-height: 1.6;
+
+}
+#ourphoto {
+  background-image: url(https://www.technootech.com/wp-content/uploads/2019/12/Team-Management-Software-Development.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  display: block;
+  margin: 20px;
+  min-width: 50%;
+  /*LARHEZZA MINIMA*/
+  min-height: 50%;
+  border-radius: 15px;
+  flex-grow: 1;
+
+}
+
+
+
+
+/*-----------------SOTTO-------------------------------------*/
+section {
+
+  height: 100vh;
+  background-color: var(--LightGray_N);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+#middlebottom{
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Gray_N);
+  border-radius: 10px;
+ 
+}
+#middlebottom h2{
+  
+  
+  
+  background-color: var(--Gray_N);
+  width 95%; /*REM*/
+  text-align: center;
+  margin: auto;
+  
+  border-radius: 10px;
+}
+
+
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--LightGray_N);
+  padding:20px;
+   /*REM*/
+  margin: 32px;          /*REM*/
+}
+
+
+
+
+.sub .announce{
+  display: flex; 
+}
+img.img_announce{
+  
+  max-width: 100%;
+ 
+}
+
+
+.sub .announce .info{
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  flex-grow: 1;
+  width :50%;
+  
+
+}
+.sub .announce .info p{
+font-size : 1em;
+}
+
+.sub .announce .buy{
+  
+  flex-direction: column-reverse;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  flex-grow: 1;
+  width :50%;
+  color: #fff;
+  
+}
+
+.btn,#podcast{
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 15px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width:50%;
+  font-size : 100%;
+}
+
+.btn:hover {
+  background-color: var(--Red_N);
+
+}
+
+
+.sub .announce .buy img{
+
+  width: 100%;
+  height :100%;
+  margin:auto;
+  border-radius: 30px;
+  /*SOPRA HO IL TASTO*/
+  
+}
+img_announce{
+
+  width: 100%;
+ 
+  height :100%;
+  margin:auto;
+  border-radius: 30px;
+  /*SOPRA HO IL TASTO*/
+
+
+}
+A1{
+    padding: 0.5rem;
+    flex-grow: 1;
+    width: 50%;
+    color: #fff;
+}
+
+
+A2{
+    flex-direction: column-reverse;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    flex-grow: 1;
+    width: 50%;
+    color: #fff;
+}
+div{
+
+  text-align:center;
+
+}
+
+#podcastdiv{
+  display: flex;
+  flex-direction: column; 
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+  background-color: var(--Gray_N);
+}
+#podcastdiv span{
+  flex-grow:1;
+  text-align: center;
+
+} 
+X{
+  background-color: var(--LightGray_N);
+
+}
+#podcastdiv div{
+  flex-grow:1;
+
+}
+
+
+.sub .api{
+  padding: 15px;
+  background-color: lightgreen;
+  display: flex;
+
+  
+  flex-direction: row;  
+  align-content: stretch;
+
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+
+}
+
+
+
+
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  background-color: var(--Gray_N);
+  color: rgba(255, 255, 255, .8);
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+/*SCOMPAIONO I LINK*/
+@media (max-width: 750px) {
+  header {
+    height: 300px;
+  }
+
+  #links {
+    display: none;
+  }
+
+/*IL TITOLO SI ADATTA*/
+  #sub_title {
+    font-size: 0.25em;
+    /*rimpicciolisco*/
+    padding-left: 18px;
+    /*e tolgo bordo sx*/
+  }
+
+  #title {
+    font-size: 0.5em;
+    text-align: center;
+  }
+
+
+  /*IL FOOTER SI STRINGE*/
+  footer {
+    font-size: 1em;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+  }
+
+  footer p {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    bottom: 0px;
+
+  }
+
+
+
+/*I CONTENUNTI SI INCASTRANO BENE*/
+  #middletop {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sub {
+    /*OK*/
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .btn{
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #ourphoto {
+    /*La nostra foto cambia direzione e forma*/
+
+    padding: 72px;
+
+    min-width: 50%;
+    /*LARHEZZA MINIMA*/
+    min-height: 0%;
+  }
+
+
+/*TUTTI I FONT CENTRO RIMPICCIOLISCONO*/
+
+  section {
+    font-size: 0.5em;
+  }
+
+
+/*MENU INVISIBILE*/
+#menu {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+#menu div {
+
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+
+}
+
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
